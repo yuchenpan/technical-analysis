@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yuchen.indicators</groupId>
-    <artifactId>indicators</artifactId>
+    <groupId>com.yuchen.analysis</groupId>
+    <artifactId>technical-analysis</artifactId>
     <version>1.0</version>
 
-    <name>indicators</name>
+    <name>technical-analysis</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

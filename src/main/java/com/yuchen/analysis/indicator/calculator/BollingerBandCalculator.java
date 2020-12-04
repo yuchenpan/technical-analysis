@@ -1,4 +1,4 @@
-package com.yuchen.indicators.bollinger;
+package com.yuchen.analysis.indicator.calculator;
 
 import java.util.ArrayList;
 import java.util.List;

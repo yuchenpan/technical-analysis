@@ -1,5 +1,6 @@
-package com.yuchen.indicators.bollinger;
+package com.yuchen.analysis.bollinger;
 
+import com.yuchen.analysis.indicator.calculator.BollingerBandCalculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
