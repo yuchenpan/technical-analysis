@@ -6,13 +6,7 @@ import java.util.List;
 
 public class Average {
     public static Double get(List<Double> numbers) {
-        Double total = 0d;
-
-        for (Double d : numbers) {
-            total += d;
-        }
-
-        return total / numbers.size();
+        return Total.get(numbers) / numbers.size();
     }
 
     public static Double closes(Candles candles) {
