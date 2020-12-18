@@ -1,31 +1,33 @@
 package com.yuchen.analysis.candle;
 
-public class Candle {
-    private final Double open;
-    private final Double close;
-    private final Double high;
-    private final Double low;
+import java.math.BigDecimal;
 
-    public Candle(Double open, Double close, Double high, Double low) {
+public class Candle {
+    private final BigDecimal open;
+    private final BigDecimal close;
+    private final BigDecimal high;
+    private final BigDecimal low;
+
+    public Candle(BigDecimal open, BigDecimal close, BigDecimal high, BigDecimal low) {
         this.open = open;
         this.close = close;
         this.high = high;
         this.low = low;
     }
 
-    public Double getOpen() {
+    public BigDecimal getOpen() {
         return open;
     }
 
-    public Double getClose() {
+    public BigDecimal getClose() {
         return close;
     }
 
-    public Double getHigh() {
+    public BigDecimal getHigh() {
         return high;
     }
 
-    public Double getLow() {
+    public BigDecimal getLow() {
         return low;
     }
 }

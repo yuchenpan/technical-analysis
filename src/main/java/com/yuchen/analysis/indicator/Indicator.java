@@ -2,6 +2,8 @@ package com.yuchen.analysis.indicator;
 
 import com.yuchen.analysis.candle.Candles;
 
+import java.math.BigDecimal;
+
 /**
  * An indicator which performs calculations to return a number at a specific candle.
  */
@@ -12,12 +14,12 @@ public abstract class Indicator {
         this.candles = candles;
     }
 
-    public abstract Double calculate(int index);
+    public abstract BigDecimal calculate(int index);
 
     /**
      * @return the number that the indicator returns on the most recent candle.
      */
-    public Double calculate() {
+    public BigDecimal calculate() {
         return calculate(0);
     }
 }

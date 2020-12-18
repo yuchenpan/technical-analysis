@@ -1,13 +1,14 @@
 package com.yuchen.analysis.indicator.util;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class Total {
-    public static Double get(List<Double> numbers) {
-        Double total = 0d;
+    public static BigDecimal get(List<BigDecimal> numbers) {
+        BigDecimal total = new BigDecimal(0);
 
-        for (Double d : numbers) {
-            total += d;
+        for (BigDecimal d : numbers) {
+            total = total.add(d);
         }
 
         return total;

@@ -1,5 +1,6 @@
 package com.yuchen.analysis.candle;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -15,6 +16,16 @@ public class Candles implements Iterable<Candle> {
 
     public Candles(List<Candle> candles) {
         this.candles = new ArrayList<>(candles);
+    }
+
+    public static Candles of(Candles... candles) {
+        List<Candle> allCandles = new ArrayList<>();
+
+        for (Candles candleCollection : candles) {
+            allCandles.addAll(candleCollection.all());
+        }
+
+        return new Candles(allCandles);
     }
 
     public int size() {
@@ -33,18 +44,22 @@ public class Candles implements Iterable<Candle> {
         return sublist(0, endIndex);
     }
 
-    public List<Double> closes(int period) {
+    public List<BigDecimal> closes(int period) {
         return sublist(period).stream()
                 .map(Candle::getClose)
                 .collect(Collectors.toList());
     }
 
-    public List<Double> closes() {
+    public List<BigDecimal> closes() {
         return closes(candles.size());
     }
 
     public Stream<Candle> stream() {
         return candles.stream();
+    }
+
+    public List<Candle> all() {
+        return new ArrayList<>(this.candles);
     }
 
     @Override
