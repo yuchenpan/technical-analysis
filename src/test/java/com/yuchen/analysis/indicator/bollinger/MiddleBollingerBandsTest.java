@@ -14,7 +14,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class MiddleBollingerBandsTest {
     private int period;
     private Candles candles;
-    private MiddleBollingerBands testSubject;
 
     private BigDecimal result;
 
@@ -71,7 +70,6 @@ class MiddleBollingerBandsTest {
     }
 
     private void whenCalculating(int index) {
-        this.testSubject = new MiddleBollingerBands(period, candles);
-        this.result = testSubject.calculate(index);
+        this.result = new MiddleBollingerBands(period, candles).calculate(index);
     }
 }
