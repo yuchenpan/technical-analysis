@@ -10,16 +10,16 @@ import java.util.List;
 public class CandlesFactory {
     public static Candles simpleCloseCandles() {
         return new Candles(candles(
-                closeOnly(bigDecimal("1")),
-                closeOnly(bigDecimal("2")),
-                closeOnly(bigDecimal("3")),
-                closeOnly(bigDecimal("4")),
-                closeOnly(bigDecimal("5")),
-                closeOnly(bigDecimal("6")),
-                closeOnly(bigDecimal("7")),
-                closeOnly(bigDecimal("8")),
-                closeOnly(bigDecimal("9")),
-                closeOnly(bigDecimal("1"))
+                closeOnly(1d),
+                closeOnly(2d),
+                closeOnly(3d),
+                closeOnly(4d),
+                closeOnly(5d),
+                closeOnly(6d),
+                closeOnly(7d),
+                closeOnly(8d),
+                closeOnly(9d),
+                closeOnly(10d)
         ));
     }
 
@@ -29,52 +29,52 @@ public class CandlesFactory {
 
     public static Candles eurusdMonthly2017() {
         return new Candles(candles(
-                new Candle(bigDecimal("1.19041"), bigDecimal("1.20039"), bigDecimal("1.20256"), bigDecimal("1.17177")),
-                new Candle(bigDecimal("1.16457"), bigDecimal("1.19041"), bigDecimal("1.19621"), bigDecimal("1.15539")),
-                new Candle(bigDecimal("1.18150"), bigDecimal("1.16457"), bigDecimal("1.18800"), bigDecimal("1.15741")),
-                new Candle(bigDecimal("1.19091"), bigDecimal("1.18150"), bigDecimal("1.20928"), bigDecimal("1.17170")),
-                new Candle(bigDecimal("1.18425"), bigDecimal("1.19091"), bigDecimal("1.20705"), bigDecimal("1.16622")),
-                new Candle(bigDecimal("1.14252"), bigDecimal("1.18425"), bigDecimal("1.18460"), bigDecimal("1.13126")),
-                new Candle(bigDecimal("1.12433"), bigDecimal("1.14252"), bigDecimal("1.14454"), bigDecimal("1.11191")),
-                new Candle(bigDecimal("1.08962"), bigDecimal("1.12433"), bigDecimal("1.12684"), bigDecimal("1.08393")),
-                new Candle(bigDecimal("1.06548"), bigDecimal("1.08962"), bigDecimal("1.09508"), bigDecimal("1.05698")),
-                new Candle(bigDecimal("1.05764"), bigDecimal("1.06548"), bigDecimal("1.09060"), bigDecimal("1.04950")),
-                new Candle(bigDecimal("1.07975"), bigDecimal("1.05764"), bigDecimal("1.08290"), bigDecimal("1.04938")),
-                new Candle(bigDecimal("1.05198"), bigDecimal("1.07975"), bigDecimal("1.08124"), bigDecimal("1.03406"))
+                new Candle(1.19041d, 1.20039d, 1.20256d, 1.17177d),
+                new Candle(1.16457d, 1.19041d, 1.19621d, 1.15539d),
+                new Candle(1.18150d, 1.16457d, 1.18800d, 1.15741d),
+                new Candle(1.19091d, 1.18150d, 1.20928d, 1.17170d),
+                new Candle(1.18425d, 1.19091d, 1.20705d, 1.16622d),
+                new Candle(1.14252d, 1.18425d, 1.18460d, 1.13126d),
+                new Candle(1.12433d, 1.14252d, 1.14454d, 1.11191d),
+                new Candle(1.08962d, 1.12433d, 1.12684d, 1.08393d),
+                new Candle(1.06548d, 1.08962d, 1.09508d, 1.05698d),
+                new Candle(1.05764d, 1.06548d, 1.09060d, 1.04950d),
+                new Candle(1.07975d, 1.05764d, 1.08290d, 1.04938d),
+                new Candle(1.05198d, 1.07975d, 1.08124d, 1.03406d)
         ));
     }
 
     public static Candles eurusdMonthly2018() {
         return new Candles(candles(
-                new Candle(bigDecimal("1.13159"), bigDecimal("1.14649"), bigDecimal("1.14856"), bigDecimal("1.12701")),
-                new Candle(bigDecimal("1.13117"), bigDecimal("1.13159"), bigDecimal("1.15004"), bigDecimal("1.12155")),
-                new Candle(bigDecimal("1.16027"), bigDecimal("1.13117"), bigDecimal("1.16253"), bigDecimal("1.13020")),
-                new Candle(bigDecimal("1.16019"), bigDecimal("1.16027"), bigDecimal("1.18151"), bigDecimal("1.15260")),
-                new Candle(bigDecimal("1.16908"), bigDecimal("1.16019"), bigDecimal("1.17337"), bigDecimal("1.13010")),
-                new Candle(bigDecimal("1.16847"), bigDecimal("1.16908"), bigDecimal("1.17908"), bigDecimal("1.15748")),
-                new Candle(bigDecimal("1.16941"), bigDecimal("1.16847"), bigDecimal("1.18518"), bigDecimal("1.15080")),
-                new Candle(bigDecimal("1.20791"), bigDecimal("1.16941"), bigDecimal("1.20842"), bigDecimal("1.15100")),
-                new Candle(bigDecimal("1.23241"), bigDecimal("1.20791"), bigDecimal("1.24140"), bigDecimal("1.20556")),
-                new Candle(bigDecimal("1.21946"), bigDecimal("1.23241"), bigDecimal("1.24767"), bigDecimal("1.21542")),
-                new Candle(bigDecimal("1.24137"), bigDecimal("1.21946"), bigDecimal("1.25560"), bigDecimal("1.21874")),
-                new Candle(bigDecimal("1.20039"), bigDecimal("1.24137"), bigDecimal("1.25374"), bigDecimal("1.19159"))
+                new Candle(1.13159d, 1.14649d, 1.14856d, 1.12701d),
+                new Candle(1.13117d, 1.13159d, 1.15004d, 1.12155d),
+                new Candle(1.16027d, 1.13117d, 1.16253d, 1.13020d),
+                new Candle(1.16019d, 1.16027d, 1.18151d, 1.15260d),
+                new Candle(1.16908d, 1.16019d, 1.17337d, 1.13010d),
+                new Candle(1.16847d, 1.16908d, 1.17908d, 1.15748d),
+                new Candle(1.16941d, 1.16847d, 1.18518d, 1.15080d),
+                new Candle(1.20791d, 1.16941d, 1.20842d, 1.15100d),
+                new Candle(1.23241d, 1.20791d, 1.24140d, 1.20556d),
+                new Candle(1.21946d, 1.23241d, 1.24767d, 1.21542d),
+                new Candle(1.24137d, 1.21946d, 1.25560d, 1.21874d),
+                new Candle(1.20039d, 1.24137d, 1.25374d, 1.19159d)
         ));
     }
 
     public static Candles eurusdMonthly2019() {
         return new Candles(candles(
-                new Candle(bigDecimal("1.10191"), bigDecimal("1.12120"), bigDecimal("1.12392"), bigDecimal("1.10031")),
-                new Candle(bigDecimal("1.11514"), bigDecimal("1.10191"), bigDecimal("1.11756"), bigDecimal("1.09812")),
-                new Candle(bigDecimal("1.08987"), bigDecimal("1.11514"), bigDecimal("1.11794"), bigDecimal("1.08792")),
-                new Candle(bigDecimal("1.09905"), bigDecimal("1.08987"), bigDecimal("1.11096"), bigDecimal("1.08847")),
-                new Candle(bigDecimal("1.10766"), bigDecimal("1.09905"), bigDecimal("1.12496"), bigDecimal("1.09632")),
-                new Candle(bigDecimal("1.13721"), bigDecimal("1.10766"), bigDecimal("1.13721"), bigDecimal("1.10604")),
-                new Candle(bigDecimal("1.11688"), bigDecimal("1.13721"), bigDecimal("1.14122"), bigDecimal("1.11603")),
-                new Candle(bigDecimal("1.12151"), bigDecimal("1.11688"), bigDecimal("1.12649"), bigDecimal("1.11072")),
-                new Candle(bigDecimal("1.12178"), bigDecimal("1.12151"), bigDecimal("1.13239"), bigDecimal("1.11115")),
-                new Candle(bigDecimal("1.13706"), bigDecimal("1.12178"), bigDecimal("1.14482"), bigDecimal("1.11764")),
-                new Candle(bigDecimal("1.14474"), bigDecimal("1.13706"), bigDecimal("1.14884"), bigDecimal("1.12343")),
-                new Candle(bigDecimal("1.14649"), bigDecimal("1.14474"), bigDecimal("1.15702"), bigDecimal("1.12894"))
+                new Candle(1.10191d, 1.12120d, 1.12392d, 1.10031d),
+                new Candle(1.11514d, 1.10191d, 1.11756d, 1.09812d),
+                new Candle(1.08987d, 1.11514d, 1.11794d, 1.08792d),
+                new Candle(1.09905d, 1.08987d, 1.11096d, 1.08847d),
+                new Candle(1.10766d, 1.09905d, 1.12496d, 1.09632d),
+                new Candle(1.13721d, 1.10766d, 1.13721d, 1.10604d),
+                new Candle(1.11688d, 1.13721d, 1.14122d, 1.11603d),
+                new Candle(1.12151d, 1.11688d, 1.12649d, 1.11072d),
+                new Candle(1.12178d, 1.12151d, 1.13239d, 1.11115d),
+                new Candle(1.13706d, 1.12178d, 1.14482d, 1.11764d),
+                new Candle(1.14474d, 1.13706d, 1.14884d, 1.12343d),
+                new Candle(1.14649d, 1.14474d, 1.15702d, 1.12894d)
         ));
     }
 
@@ -82,11 +82,7 @@ public class CandlesFactory {
         return Arrays.asList(candles);
     }
 
-    public static Candle closeOnly(BigDecimal close) {
-        return new Candle(bigDecimal("0"), close, bigDecimal("0"), bigDecimal("0"));
-    }
-
-    private static BigDecimal bigDecimal(String value) {
-        return new BigDecimal(value);
+    public static Candle closeOnly(double close) {
+        return new Candle(0, close, 0, 0);
     }
 }

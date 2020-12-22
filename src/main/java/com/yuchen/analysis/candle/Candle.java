@@ -8,6 +8,10 @@ public class Candle {
     private final BigDecimal high;
     private final BigDecimal low;
 
+    public Candle(double open, double close, double high, double low) {
+        this(new BigDecimal(open), new BigDecimal(close), new BigDecimal(high), new BigDecimal(low));
+    }
+
     public Candle(BigDecimal open, BigDecimal close, BigDecimal high, BigDecimal low) {
         this.open = open;
         this.close = close;
