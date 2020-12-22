@@ -9,7 +9,7 @@ public class Candle {
     private final BigDecimal low;
 
     public Candle(double open, double close, double high, double low) {
-        this(new BigDecimal(open), new BigDecimal(close), new BigDecimal(high), new BigDecimal(low));
+        this(BigDecimal.valueOf(open), BigDecimal.valueOf(close), BigDecimal.valueOf(high), BigDecimal.valueOf(low));
     }
 
     public Candle(BigDecimal open, BigDecimal close, BigDecimal high, BigDecimal low) {

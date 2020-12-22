@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 import static com.yuchen.analysis.candle.CandlesFactory.eurusdMonthly17to20;
 import static com.yuchen.analysis.candle.CandlesFactory.simpleCloseCandles;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static com.yuchen.analysis.indicator.util.BigDecimalAssertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class MiddleBollingerBandsTest {
@@ -31,7 +31,7 @@ class MiddleBollingerBandsTest {
         givenCandles(simpleCloseCandles());
         whenCalculating(0);
 
-        assertEquals(new BigDecimal(3), result);
+        assertEquals(3d, result);
     }
 
     @Test
@@ -40,7 +40,7 @@ class MiddleBollingerBandsTest {
         givenCandles(simpleCloseCandles());
         whenCalculating(3);
 
-        assertEquals(new BigDecimal(6), result);
+        assertEquals(6d, result);
     }
 
     @Test
@@ -49,7 +49,7 @@ class MiddleBollingerBandsTest {
         givenCandles(eurusdMonthly17to20());
         whenCalculating(0);
 
-        assertEquals(new BigDecimal("1.1325"), result);
+        assertEquals(1.1325d, result);
     }
 
     @Test
@@ -58,7 +58,7 @@ class MiddleBollingerBandsTest {
         givenCandles(eurusdMonthly17to20());
         whenCalculating(2);
 
-        assertEquals(new BigDecimal("1.1434"), result);
+        assertEquals(1.1434d, result);
     }
 
     private void givenPeriod(int period) {
